@@ -121,8 +121,9 @@ jobs:
       - name: Checkout tooling repo
         uses: actions/checkout@v4
         with:
-          repository: redhat-cop/ansible_collections_tooling
+          repository: Tompage1994/ansible_collections_tooling
           path: ansible_collections_tooling
+          ref: test/calc-change-script
 
       - name: DEBUG
         shell: bash

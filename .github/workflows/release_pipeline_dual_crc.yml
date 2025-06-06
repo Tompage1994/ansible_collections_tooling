@@ -127,6 +127,11 @@ jobs:
       - name: Calculate bump level
         id: bump_level
         shell: bash
+        run: ls
+
+      - name: Calculate bump level
+        id: bump_level
+        shell: bash
         run: ansible_collections_tooling/.github/release/calculate_change.sh
 
       - name: Bump version

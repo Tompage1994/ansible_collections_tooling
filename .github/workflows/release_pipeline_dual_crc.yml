@@ -124,8 +124,7 @@ jobs:
           repository: redhat-cop/ansible_collections_tooling
           path: ansible_collections_tooling
 
-      - name: Calculate bump level
-        id: bump_level
+      - name: DEBUG
         shell: bash
         run: ls
 

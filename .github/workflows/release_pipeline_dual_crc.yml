@@ -132,6 +132,7 @@ jobs:
       token: ${{ secrets.git_token }}
   merge_release:
     needs:
+      - changelog
       - calculate_version
     runs-on: ubuntu-latest
     steps:
